@@ -1,7 +1,10 @@
 name: generate_html_pdf
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
+    paths:
+      - src/**
 
 jobs:
   generate-html-and-pdf:
@@ -19,7 +22,7 @@ jobs:
           sudo apt-spy2 fix --commit --launchpad --country=US
           sudo apt-get update
           sudo apt-get install xvfb libfontconfig wkhtmltopdf
-          xvfb-run wkhtmltopdf -L 20mm -R 20mm index.html resume.pdf
+          xvfb-run wkhtmltopdf --margin-left 14 --margin-right 14 --margin-top 12 --margin-bottom 12 index.html resume.pdf
 
       - name: Commit changes
         run: |
