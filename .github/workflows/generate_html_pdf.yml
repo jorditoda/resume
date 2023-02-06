@@ -11,24 +11,24 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Generate html file
-      - uses: docker://pandoc/core:2.9
+        uses: docker://pandoc/core:2.9
         with:
           args: --standalone -c src/style.css -o index.html src/resume.md
 
       - name: Generate pdf file
-      - run: |
+        run: |
           sudo apt-get install xvfb libfontconfig wkhtmltopdf
           xvfb-run wkhtmltopdf -L 20mm -R 20mm index.html resume.pdf
 
       - name: Commit changes
-      - run: |
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add index.html resume.pdf
           git commit -m "[Action] Generate html and pdf files"
 
       - name: Push changes
-      - uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ github.token }}
           branch: ${{ github.head_ref }}
