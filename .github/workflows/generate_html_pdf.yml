@@ -2,8 +2,6 @@ name: generate_html_pdf
 on:
   push:
     branches: [ master ]
-    paths:
-      - src/**
 
 jobs:
   generate-html-and-pdf:
