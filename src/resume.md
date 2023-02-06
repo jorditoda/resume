@@ -44,13 +44,6 @@ July 2018 - November 2019
 
 
 <div class="page-break"></div>
-
-Education
----------
-2016
-:	*Computer Engineer - Master’s Degree*  
-	Focus area: Software Engineering  
-	[Universidad de Las Palmas de Gran Canaria (Spain)](https://ulpgc.es)  
 	
 Main Languages & IT Strengths
 ------------
