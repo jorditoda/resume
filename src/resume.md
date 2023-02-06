@@ -1,5 +1,3 @@
-<title> Jordi Toda Ferran resume </title>
-
 ![](src/logo.png)
 
 # Jordi Toda Ferran
