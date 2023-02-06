@@ -15,6 +15,9 @@ jobs:
 
       - name: Generate pdf file
         run: |
+          sudo gem install apt-spy2
+          sudo apt-spy2 fix --commit --launchpad --country=US
+          sudo apt-get update
           sudo apt-get install xvfb libfontconfig wkhtmltopdf
           xvfb-run wkhtmltopdf -L 20mm -R 20mm index.html resume.pdf
 
