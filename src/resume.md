@@ -84,4 +84,5 @@ Languages
 <br /><br />
 
 ------
-> Download [PDF version](https://yeikiu.github.io/resume.pdf) | See resume online @ [https://yeikiu.github.io](https://yeikiu.github.io)
+> Download [PDF version](https://github.com/jorditoda/resume/blob/master/resume.pdf) | Resume [online](http://htmlpreview.github.io/?https://github.com/jorditoda/resume/blob/master/index.html) | [Github](https://github.com/jorditoda/resume) repository
+
