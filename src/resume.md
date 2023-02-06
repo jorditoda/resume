@@ -84,5 +84,5 @@ Languages
 <br /><br />
 
 ------
-> Download [PDF version](https://github.com/jorditoda/resume/blob/master/resume.pdf) | Resume [online](http://htmlpreview.github.io/?https://github.com/jorditoda/resume/blob/master/index.html) | [Github](https://github.com/jorditoda/resume) repository
+> Download [PDF version](https://raw.githubusercontent.com/jorditoda/resume/blob/master/resume.pdf) | Resume [online](http://htmlpreview.github.io/?https://github.com/jorditoda/resume/blob/master/index.html) | [Github](https://github.com/jorditoda/resume) repository
 
