@@ -6,10 +6,10 @@ on:
       - src/**
 
 jobs:
-  md_html_pdf:
-    runs-on: ubuntu-18.04
+  generate_html_pdf:
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: docker://pandoc/core:2.9
         with:
@@ -21,7 +21,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add index.html resume.pdf
-          git commit -m "[CI:deploy] md_html_pdf job"
+          git commit -m "[CI:deploy] Generate html and pdf files"
 
       - uses: ad-m/github-push-action@master
         with:
